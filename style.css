@@ -1,0 +1,479 @@
+* {
+
+    margin: 0;
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.logo-img {
+
+    height: 75px;
+    width: 290px !important;
+
+}
+
+.nav-bar {
+
+    background-color: black;
+    height: 100px;
+    
+}
+
+.nav-btns {
+
+    font-size: small;
+
+}
+
+.nav-btn {
+
+    margin-left: 15px;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.home-sec {
+    background-image: url(./images/Home-sec.jpg);
+    height: 88vh;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.home-qoute {
+
+
+    padding-top: 150px;
+    max-width: 1145px !important;
+    background-color: transparent;
+
+
+}
+
+.count-num {
+
+    font-size: 123px;
+
+}
+
+.count {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+
+}
+
+.Starshp-sec {
+
+    background-image: url(./images/Starship.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat;
+
+
+}
+
+.startship-content {
+
+    top: 42%;
+}
+
+.startship-btn {
+
+    font-size: small;
+    background: transparent!important; 
+    color: white !important;
+    border: 2px solid white !important;
+    height: 50px;
+  
+    
+}
+.startship-btn:hover{
+  
+    background: white!important; 
+    color: black !important;
+
+} 
+
+
+.slide-cntrl {
+
+    position: absolute;
+    bottom: 5%;
+
+
+}
+
+.slide-content {
+
+    position: relative;
+    top: 40%;
+    left: 5% !important;
+    width: 30%;
+    text-align: left !important;
+
+}
+
+.video-sec {
+
+    background-color: black;
+}
+
+.video-text {
+
+
+    padding-top: 19%;
+
+}
+
+.land-sec {
+
+
+    background-color: black;
+}
+
+.land-img {
+
+    position: relative;
+    left: 14%;
+    padding-bottom: 5%;
+}
+
+.land-head {
+
+    left: 26%;
+    width: 53%;
+}
+
+.facilities {
+
+    background-color: black;
+
+}
+
+.fac-row {
+
+    padding: 5%;
+}
+
+.img {
+
+    padding: 3%;
+}
+
+.footer {
+
+    background-color: black;
+    text-align: center;
+}
+
+.footer-text {
+
+    font-size: small;
+    color: grey;
+
+}
+
+.footer-input {
+
+    background-color: black;
+    height: 57px;
+    border: 1px solid grey;
+}
+
+.footer-btn {
+
+    background-color: black !important;
+    height: 57px;
+    border: 2px solid white !important;
+
+}
+.footer-btn:hover{
+
+    background-color: #ffffff!important;
+    color: black!important;
+}
+
+.policy {
+
+    font-size: x-small;
+    padding: 20px;
+    margin: 5px;
+
+}
+
+.footer2 {
+    height: 50px;
+}
+
+.box {
+    opacity: 0;
+    /* Initially, hide the element */
+    transform: translateY(20px);
+    /* Start off-screen */
+    transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
+}
+
+[data-animation="fade-in"] {
+    transition-delay: 0.5s;
+    /* Add a delay for each element */
+}
+
+/* Define the style for the underline */
+.nav-btn::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    /* Initially, the underline starts from the left */
+    bottom: 0;
+    width: 0;
+    /* Initially, it has zero width */
+    height: 2px;
+    /* Height of the underline */
+    background-color: #ffffff;
+    /* Color of the underline */
+    transition: width 0.2s ease, right 0.2s ease;
+    /* Transition for width and left properties */
+}
+
+/* Define the style when hovering */
+.nav-btn:hover::after {
+   margin-left: 8px;
+    width: 80%;
+    /* Expand the underline to 100% width */
+    left: 0;
+    /* Start from the left */
+}
+
+/* Define the style when not hovering (mouse out) */
+.nav-btn::after {
+    transition: 0.3s ease, left 0.3s ease;
+    /* Transition for width and left properties */
+}
+
+.nav-btn:not(:hover)::after {
+    width: 0;
+    /* Shrink the underline back to zero width */
+    right: 100%;
+    /* Move the underline to the right */
+}
+.vid{
+    padding: 56px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .count-num {
+
+        font-size: 100px;
+
+    }
+
+    .home-sec {
+
+        height: 95vh;
+
+    }
+
+    .logo-img {
+
+        height: 30px;
+        width: 175px !important;
+    }
+
+    .nav-bar {
+        height: 40px;
+
+    }
+
+    .count-type {
+        font-size: 23px;
+    }
+
+    .slide-content {
+
+
+        top: 17% !important;
+    }
+
+    .slide-text {
+
+        font-size: x-small;
+    }
+
+    .land-head {
+
+        left: 10%;
+        width: 75%;
+    }
+
+    .land-map {
+
+        font-size: 12px !important;
+    }
+    .vid{
+        padding: 35px!important;
+    }
+    .fac-text{
+        padding: 20px!important;
+    }
+    
+
+}
+
+@media only screen and (max-width: 820px) {
+    .count-num {
+        font-size: 75px;
+
+    }
+
+    .count-type {
+        font-size: 19px;
+    }
+
+    .slide-head {
+
+        font-size: 20px !important;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    .count-num {
+        font-size: 50px;
+    }
+
+    .count-type {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .slide-text {
+
+        display: none !important;
+
+    }
+    .home-qoute {
+
+        font-size: 13px;
+    }
+    .fac-text{
+        padding: 20px!important;
+    }
+    
+}
+
+@media only screen and (max-width: 720px) {
+
+    .count-type {
+        font-size: 15px;
+    }
+
+    .Starshp-sec {
+
+        height: 100%;
+        font-size: small;
+
+    }
+
+    .startship-head {
+
+        font-size: medium;
+        padding-top: 20px;
+    }
+
+    .startship-btn {
+        margin-bottom: 10px;
+        width: 200px;
+
+    }
+
+    .slider-btn {
+
+        display: none !important;
+    }
+
+    .slide-text {
+
+        font-size: xx-small !important;
+    }
+
+    .slide-head {
+
+        font-size: 13px !important;
+    }
+    .vid{
+        padding: 20px!important;
+    }
+    
+    
+
+    
+
+}
+
+@media only screen and (max-width: 300px) {
+
+    .slide-text {
+
+        display: none !important;
+    }
+    .vid{
+        padding: 12px!important;
+    }
+    .fac-text{
+        padding: 20px!important;
+    }
+    
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .video-text {
+
+        padding: 25px !important;
+    }
+
+    .footer-btn {
+
+        background-color: black !important;
+        /* height: 50px; */
+        width: 80px !important;
+        font-size: 10px !important;
+        border: 2px solid white !important;
+
+    }
+
+    .policy {
+
+        font-size: xx-small;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .footer2 {
+        height: 50px;
+    }
+    .vid{
+
+        padding: 26px!important;
+    }
+    .fac-text{
+        padding: 20px!important;
+    }
+    
+    
+    
+
+}
